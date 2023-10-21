@@ -6,18 +6,30 @@
     --color-Dark-blue: hsl(218, 44%, 22%);
     --font-size-p: 15px
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+}
 body{
     background-color: var(--color-Light-gray);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
     flex-direction: column;
 
     font-family: 'Outfit', sans-serif;
 }
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 
 
 .card{
@@ -30,8 +42,9 @@ body{
     justify-content: center;
     background-color:var(--color-White);
     border-radius: 1rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2), -1px -1px 10px rgba(0, 0, 0, 0.2);
 }
-.card-img{
+.card-img-container{
     width: 90%;
     display: flex;
     justify-content: center;
@@ -40,7 +53,7 @@ body{
     border-radius: 15px;
     overflow: hidden;
 }
-.card-img img{
+.card-img-container>img{
     width: 100%;
     border-radius: 15px;
 }
@@ -49,16 +62,28 @@ body{
     text-align: center;
     padding: 1rem;
 }
-.card-texto h2{
+.card-texto>h2{
     color: var(--color-Dark-blue);
     font-size: 1.5rem;
     font-weight: 700;
-
+    margin-bottom: .8rem;
 }
-.card-texto p{
+.card-texto>p{
     color: var(--color-Grayish-blue);
 }
 
 
 
 
+.attribution{
+    font-size: 1rem;
+    text-align: center;
+}
+.attribution>a{
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    color: var(--color-Grayish-blue);
+}
+.attribution>a:hover{
+    color: #09f;
+}
