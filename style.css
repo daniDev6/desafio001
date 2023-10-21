@@ -31,7 +31,7 @@ body{
     background-color:var(--color-White);
     border-radius: 1rem;
 }
-.card-img{
+.card-img-container{
     width: 90%;
     display: flex;
     justify-content: center;
@@ -40,7 +40,7 @@ body{
     border-radius: 15px;
     overflow: hidden;
 }
-.card-img img{
+.card-img-container>img{
     width: 100%;
     border-radius: 15px;
 }
